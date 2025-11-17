@@ -1,0 +1,56 @@
+/* MARK: GLOBAL STYLES
+*/
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+}
+
+/* MARK: HOME PAGE
+*/
+
+#navBar {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+}
+
+#nameLogo {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+#navLinks {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navElement {
+    width: 20%;
+}
+
+.navItem {
+    width: 6rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    transition: .2s;
+}
+
+.navItem:hover {
+    color: gray;
+    transition: .2s;
+}
