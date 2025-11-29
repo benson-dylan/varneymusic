@@ -32,15 +32,14 @@ html, body {
 #navContent {
     width: 90%;
     height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-items: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
 }
 
 #nameLogo {
-    width: fit-content;
-    text-align: left;
+    width: max-content;
+    text-align: center;
     text-decoration: none;
     color: black;
     font-family: "Montserrat", sans-serif;
@@ -50,6 +49,7 @@ html, body {
 #nameLogo h1 {
     font-weight: 600;
     font-size: 24pt;
+    width: max-content;
 }
 
 #navLinks {
@@ -63,14 +63,17 @@ html, body {
 }
 
 #socials {
+    width: 219px; /* Width of Name Logo */
     margin-left: auto;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: flex-end;
+    gap: .5rem;
 }
 
 .navElement {
-    width: 33%;
+    width: auto;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -95,3 +98,10 @@ html, body {
     transition: .2s;
 }
 
+.socialIcon {
+    max-width: 2.5rem;
+}
+
+#spotify {
+    max-width: 2rem;
+}
