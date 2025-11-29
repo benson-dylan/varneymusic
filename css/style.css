@@ -27,6 +27,7 @@ html, body {
     border-bottom: 1px solid lightgray;
     background-color: white;
     position: fixed;
+    z-index: 500;
 }
 
 #navContent {
@@ -104,4 +105,16 @@ html, body {
 
 #spotify {
     max-width: 2rem;
+}
+
+/* Carousel */
+
+#videoCarousel {
+    height: 23rem;
+}
+
+#carouselContainer {
+    width: 100%;
+    background-color: rgba(17, 17, 17, 0.808);
+    padding-top: 7rem;
 }
