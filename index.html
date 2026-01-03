@@ -12,83 +12,55 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
 
     <script src="./js/index.js"></script>
 
     <title>Jason Varney Music</title>
 </head>
-<body id="homePage">
-    <div id="navBar">
-        <div id="navContent">
-            <div class="navElement">
-                <a id="nameLogo" href="/"><h1>Jason Varney</h1></a>
-            </div>
-            <div class="navElement">
-                    <div id="navLinks">
-                    <a class="navItem" href="/">
-                        <span>Home</span>
-                    </a>
-                    <span>|</span>
-                    <a class="navItem" href="/scores.html">
-                        <span>Scores</span>
-                    </a class="navItem">
-                    <span>|</span>
-                    <a class="navItem" href="/about.html">
-                        <span>About</span>
-                    </a>
-                </div>
-            </div>
-            <div id="socials" class="navElement" align="center">
-                <a href="https://www.youtube.com/@jae_varney">
-                    <img class="socialIcon" src="imgs/youtube.png"/>
+<body>
+    <div class="homePage">
+        <div class="navBar">
+            <a class="nav-logo" href="/">
+                <span class="logo-text">Jason Varney</span>
+            </a>
+            <div class="nav-links">
+                <a href="#home">
+                    <span>Home</span>
                 </a>
-                <a href="https://open.spotify.com/artist/1UgiRKCNvzkJX0hAjCbWwP">
-                    <img id="spotify" class="socialIcon" src="imgs/spotify.png"/>
+                <span>|</span>
+                <a href="#music">
+                    <span>Music</span>
+                </a>
+                <span>|</span>
+                <a href="#about">
+                    <span>About</span>
                 </a>
             </div>
-        </div>
-    </div>
-    <div align="center">
-        <div id="carouselContainer">
-            <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item">
-                        <iframe width="560" height="315" 
-                        src="https://www.youtube.com/embed/4xbN6Qi_ZCE?si=FkrKUp4xofvHjM_B" 
-                        title="YouTube video player" frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerpolicy="strict-origin-when-cross-origin" 
-                        allowfullscreen></iframe>
-                    </div>
-                    <div class="carousel-item active">
-                        <iframe width="560" height="315" 
-                        src="https://www.youtube.com/embed/u9d0oOTo59A?si=Ey82HO2IznmpbSrb" 
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                    <div class="carousel-item">
-                        <iframe width="560" height="315" 
-                        src="https://www.youtube.com/embed/pYXSqFvDafQ?si=bGKXHnQtsDATwgta" 
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <ol class="carousel-indicators">
-                    <li data-bs-target="#videoCarousel" data-bs-slide-to="0"></li>
-                    <li data-bs-target="#videoCarousel" data-bs-slide-to="1"  class="active"></li>
-                    <li data-bs-target="#videoCarousel" data-bs-slide-to="2"></li>
-                </ol>
-                <a class="carousel-control-prev" data-bs-target="#videoCarousel" role="button" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <div class="nav-socials">
+                <a class="social-icon" href="https://www.youtube.com/@jae_varney">
+                    <img src="imgs/youtube.png" />
                 </a>
-                <a class="carousel-control-next" data-bs-target="#videoCarousel" role="button" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <a class="social-icon" href="https://open.spotify.com/artist/1UgiRKCNvzkJX0hAjCbWwP?si=eoRkXsz9SvyJL7HveLgDpQ">
+                    <img src="imgs/spotify.png" />
+                </a>
+                <a class="social-icon" href="https://x.com/BirdOunces?s=20">
+                    <img src="imgs/x-social-media-white-icon.png"/>
+                </a>
+                <a class="social-icon" href="mailto:jason@varneymusic.com">
+                    <img src="imgs/email.png">
                 </a>
             </div>
         </div>
-        <a href="mailto:jason@varneymusic.com">jason@varneymusic.com</a>
+        <div class="landing-page" id="home">
+            
+        </div>
+        <div class="music-page" id="music">
+
+        </div>
+        <div class="about-page" id="about">
+
+        </div>
     </div>
 </body>
 </html>

@@ -1,4 +1,5 @@
-/* MARK: GLOBAL STYLES
+/* 
+MARK: GLOBAL STYLES
 */
 
 html, body {
@@ -6,115 +7,108 @@ html, body {
     margin: 0;
 }
 
+html {
+    background-color: rgb(44, 37, 33);
+}
+
+span {
+    font-family: 'Exo 2';
+}
+
 .hidden {
     display: none;
 }
 
-/* MARK: HOME PAGE
+/* 
+MARK: NAV BAR
 */
 
-#homePage {
-    height: 200vh;
-}
-
-#navBar {
+.navBar {
     width: 100%;
-    height: 5rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    border-bottom: 1px solid lightgray;
-    background-color: white;
+    height: 6rem;
+    /* background-color: purple; */
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .7) 0%, 
+                                      rgba(0, 0, 0, 0) 100%);
     position: fixed;
-    z-index: 500;
-}
-
-#navContent {
-    width: 90%;
-    height: 100%;
     display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: space-between;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 0 2rem;
 }
 
-#nameLogo {
-    width: max-content;
-    text-align: center;
+.nav-logo {
     text-decoration: none;
-    color: black;
-    font-family: "Montserrat", sans-serif;
-    margin-right: auto;
 }
 
-#nameLogo h1 {
+.logo-text {
+    color: white;
+    font-family: 'Domine';
     font-weight: 600;
-    font-size: 24pt;
-    width: max-content;
+    font-style: italic;
+    font-size: 18pt;
 }
 
-#navLinks {
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    font-family: "Roboto Condensed";
-    font-weight: 600;
-}
-
-#socials {
-    width: 219px; /* Width of Name Logo */
-    margin-left: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    gap: .5rem;
-}
-
-.navElement {
-    width: auto;
-    height: 100%;
+.nav-links {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
 }
 
-.navItem {
-    width: 6rem;
-    height: 100%;
+.nav-links a {
+    text-decoration: none;
+    transition: .3s;
+}
+
+.nav-links a:hover {
+    font-size: large;
+    transition: .3s;
+}
+
+.nav-links span {
+    color: white;
+}
+
+.nav-socials {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.social-icon img {
+    width: 28px;
+}
+
+/*
+MARK: HOME PAGE
+*/
+
+.homePage {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    text-decoration: none;
-    color: black;
-    transition: .2s;
 }
 
-.navItem:hover {
-    color: gray;
-    transition: .2s;
-}
-
-.socialIcon {
-    max-width: 2.5rem;
-}
-
-#spotify {
-    max-width: 2rem;
-}
-
-/* Carousel */
-
-#videoCarousel {
-    height: 23rem;
-}
-
-#carouselContainer {
+.landing-page {
+    height: 100vh;
     width: 100%;
-    background-color: rgba(17, 17, 17, 0.808);
-    padding-top: 7rem;
+    background: linear-gradient(rgb(44, 37, 33, 0.7), rgb(44, 37, 33, 0.7)), 
+                url("/imgs/piano-temp.jpg") no-repeat center center;
+}
+
+/*
+MARK: MUSIC
+*/
+
+.music-page {
+    height: 110vh;
+}
+
+/*
+MARK: ABOUT
+*/
+
+.about-page {
+    height: 100vh;
+    background-color: rgb(44, 37, 33);
 }
