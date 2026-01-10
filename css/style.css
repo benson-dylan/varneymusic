@@ -128,7 +128,40 @@ MARK: MUSIC
 */
 
 .music-page {
-    height: 110vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.tab-bar {
+    height: 100%;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+}
+
+.tab-buttons {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: start;
+    border-right: solid 1px;
+}
+
+.tab-btn {
+    height: 4rem;
+    width: 100%;
+    border: none;
+    font-family: 'Exo 2';
+    color: rgb(201, 119, 52);
+}
+
+.tab-btn.active {
+    background-color: yellow;
 }
 
 /*
@@ -168,6 +201,7 @@ MARK: ABOUT
 .about-body {
     font-family: 'Domine';
     color: white;
+    text-indent: 40px;
 }
 
 .about-pic-container {
