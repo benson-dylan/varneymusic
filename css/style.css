@@ -143,7 +143,7 @@ MARK: MUSIC
 }
 
 .tab-buttons {
-    height: 70%;
+    height: 80%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -162,6 +162,88 @@ MARK: MUSIC
 
 .tab-btn.active {
     background-color: yellow;
+}
+
+.tab-content {
+    width: 85vw;
+    height: 100%;
+}
+
+.tab-header {
+    height: 5.5rem;
+    background-color: aqua;
+}
+
+.tab-body {
+    height: 100%;
+    background-color: aquamarine;
+}
+
+/*
+MARK: SCORE
+*/
+
+.score-grid {
+    height: 100%;
+    width: 100%;
+    padding-left: 13rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    overflow-y: scroll;
+}
+
+.score-container {
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.score-thumb {
+    width: 100%;
+    height: 20rem;
+    border-radius: 8px;
+    border: 1px black solid;
+}
+
+.score-audio {
+    margin-top: 1rem;
+    width: 100%;
+    border: 1px black solid;
+    border-radius: 30px;
+}
+
+.score-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: .75rem;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.score-buttons button {
+    border: 1px solid black;
+}
+
+.preview-button {
+    text-decoration: none;
+    color: black;
+    padding: .75rem 3.75rem;
+    border-radius: 30px;
+    background-color: lightgray;
+}
+
+.download-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    background-color: lightgray;
+    border-radius: 30px;
 }
 
 /*
