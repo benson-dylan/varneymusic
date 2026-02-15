@@ -124,7 +124,7 @@ MARK: HOME PAGE
 }
 
 /*
-MARK: MUSIC
+MARK: MUSIC SECTION
 */
 
 .music-page {
@@ -140,10 +140,11 @@ MARK: MUSIC
     flex-direction: column;
     align-items: end;
     justify-content: center;
+    background-color: blueviolet;
 }
 
 .tab-buttons {
-    height: 80%;
+    height: 82%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -170,13 +171,21 @@ MARK: MUSIC
 }
 
 .tab-header {
-    height: 5.5rem;
+    height: 5rem;
     background-color: aqua;
+}
+
+.tab-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 .tab-body {
     height: 100%;
-    background-color: aquamarine;
+    padding-bottom: 10rem;
 }
 
 /*
@@ -184,12 +193,13 @@ MARK: SCORE
 */
 
 .score-grid {
-    height: 100%;
+    height: 82%;
     width: 100%;
-    padding-left: 13rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15rem;
     overflow-y: scroll;
 }
 
@@ -223,7 +233,7 @@ MARK: SCORE
     margin-top: 1rem;
 }
 
-.score-buttons button {
+.score-buttons a {
     border: 1px solid black;
 }
 
@@ -246,6 +256,52 @@ MARK: SCORE
     border-radius: 30px;
 }
 
+.scroll-button {
+    background-color: white;
+    border-color: white;
+}
+
+.scroll-button:hover {
+    cursor: pointer;
+}
+
+.scroll-button img {
+    height: 2rem;
+}
+
+.page-dot {
+    height: .5rem;
+    opacity: 40%;
+}
+
+.current-page {
+    opacity: 100%;
+}
+
+
+/*
+MARK: MUSIC
+*/
+
+.music-videos {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.video-player {
+    height: 100%;
+    width: 80%;
+    background-color: aquamarine;
+}
+
+.video-tabs {
+    width: 20%;
+    height: 100%;
+    border: 1px solid black;
+    background-color: blue;
+}
+
 /*
 MARK: ABOUT
 */
@@ -256,7 +312,6 @@ MARK: ABOUT
     background-color: rgb(44, 37, 33);
     display: flex;
     flex-direction: row;
-
 }
 
 .about-text-container {
