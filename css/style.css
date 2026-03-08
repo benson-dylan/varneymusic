@@ -185,7 +185,6 @@ MARK: MUSIC SECTION
 
 .tab-body {
     height: 100%;
-    padding-bottom: 10rem;
 }
 
 /*
@@ -193,7 +192,7 @@ MARK: SCORE
 */
 
 .score-grid {
-    height: 82%;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -256,6 +255,10 @@ MARK: SCORE
     border-radius: 30px;
 }
 
+.score-page {
+    height: 82%;
+}
+
 .scroll-button {
     background-color: white;
     border-color: white;
@@ -293,6 +296,11 @@ MARK: MUSIC
     height: 100%;
     width: 80%;
     background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
 }
 
 .video-tabs {
@@ -301,6 +309,20 @@ MARK: MUSIC
     border: 1px solid black;
     background-color: blue;
 }
+
+.main-video {
+    margin-top: -5rem;
+    width: 57rem;
+    height: 32rem;
+}
+
+.video-info {
+    width: 57rem;
+    text-align: left;
+    padding-left: 1rem;
+}
+
+
 
 /*
 MARK: ABOUT
