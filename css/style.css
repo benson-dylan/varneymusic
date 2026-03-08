@@ -176,15 +176,17 @@ MARK: MUSIC SECTION
 }
 
 .tab-footer {
+    height: 6rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    gap: 1rem;
+    align-items: flex-start;
+    background-color: rgb(44, 37, 33);
 }
 
 .tab-body {
     height: 100%;
+    background-color: rgb(44, 37, 33);
 }
 
 /*
@@ -200,6 +202,7 @@ MARK: SCORE
     align-items: center;
     gap: 15rem;
     overflow-y: scroll;
+    background-color: rgb(44, 37, 33);
 }
 
 .score-container {
@@ -208,6 +211,14 @@ MARK: SCORE
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: rgb(44, 37, 33);
+}
+
+.score-container h3 {
+    background: linear-gradient(to right, rgb(215, 95, 20), rgb(240, 185, 60));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
 }
 
 .score-thumb {
@@ -220,7 +231,6 @@ MARK: SCORE
 .score-audio {
     margin-top: 1rem;
     width: 100%;
-    border: 1px black solid;
     border-radius: 30px;
 }
 
@@ -230,10 +240,11 @@ MARK: SCORE
     gap: .75rem;
     align-items: center;
     margin-top: 1rem;
+    font-weight: 600;
 }
 
 .score-buttons a {
-    border: 1px solid black;
+    background: linear-gradient(to right, rgb(215, 95, 20), rgb(240, 185, 60));
 }
 
 .preview-button {
@@ -260,7 +271,7 @@ MARK: SCORE
 }
 
 .scroll-button {
-    background-color: white;
+    background-color: rgb(44, 37, 33);
     border-color: white;
 }
 
@@ -281,6 +292,12 @@ MARK: SCORE
     opacity: 100%;
 }
 
+.page-selector {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
 
 /*
 MARK: MUSIC
