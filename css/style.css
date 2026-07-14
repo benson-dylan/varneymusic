@@ -166,8 +166,8 @@ MARK: MUSIC SECTION
 }
 
 .tab-content {
-    width: 85vw;
-    height: 100%;
+    width: 100%;
+    height: 90%;
 }
 
 .tab-header {
@@ -201,7 +201,6 @@ MARK: SCORE
     justify-content: center;
     align-items: center;
     gap: 15rem;
-    overflow-y: scroll;
     background-color: rgb(44, 37, 33);
 }
 
@@ -267,7 +266,7 @@ MARK: SCORE
 }
 
 .score-page {
-    height: 82%;
+    height: 100%;
 }
 
 .scroll-button {
@@ -339,7 +338,19 @@ MARK: MUSIC
     padding-left: 1rem;
 }
 
+/*
+MARK: VIDEO
+*/
 
+.video-page {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(255, 210, 173);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 
 /*
 MARK: ABOUT
@@ -391,4 +402,13 @@ MARK: ABOUT
     width: 80%;
     clip-path: circle(38% at 40%);
     margin-left: 33%;
+}
+
+/*
+MARK: MISC
+*/
+
+.spotify-embed {
+    height: 40rem;
+    width: 50rem;
 }
