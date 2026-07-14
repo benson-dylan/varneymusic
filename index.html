@@ -14,8 +14,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
 
-    <script src="./js/index.js"></script>
-
     <title>Jason Varney Music</title>
 </head>
 <body>
@@ -29,8 +27,12 @@
                     <span>Home</span>
                 </a>
                 <span>|</span>
+                <a href="#video">
+                    <span>Videos</span>
+                </a>
+                <span>|</span>
                 <a href="#music">
-                    <span>Music</span>
+                    <span>Scores</span>
                 </a>
                 <span>|</span>
                 <a href="#about">
@@ -44,7 +46,7 @@
                 <a class="social-icon" href="https://open.spotify.com/artist/1UgiRKCNvzkJX0hAjCbWwP?si=eoRkXsz9SvyJL7HveLgDpQ">
                     <img src="imgs/spotify.png" />
                 </a>
-                <a class="social-icon" href="https://x.com/BirdOunces?s=20">
+                <a class="social-icon" href="https://x.com/varney_music?s=20">
                     <img src="imgs/x-social-media-white-icon.png"/>
                 </a>
                 <a class="social-icon" href="mailto:jason@varneymusic.com">
@@ -58,8 +60,157 @@
                 <h2 class="sub-header">Video Game Composer</h2>
             </div>
         </div>
+        <div class="video-page" id="video" align="center">
+            <iframe class="spotify-embed" data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/0yNyQsNpT9Fn8A8YCoTWwc?utm_source=generator&theme=0&si=9be21ce86e984e30" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
         <div class="music-page" id="music">
+            <!-- <div class="tab-bar">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="videos">Music</button>
+                    <button class="tab-btn" data-tab="scores">Scores</button>
+                </div>
+            </div> -->
+            <!-- <div class="music-content">
+                <div id="videos" class="tab-content">
+                    <div class="tab-header">
+                        <h2>Music</h2>
+                    </div>
+                    <div class="tab-body music-videos">
+                        <div class="video-player">
+                            <iframe 
+                                class="main-video" 
+                                src="https://www.youtube.com/embed/4xbN6Qi_ZCE?si=5u_Y5Yj6ckj_a-0z" 
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" 
+                                allowfullscreen>
+                            </iframe>
+                            <div class="video-info">
+                                <h2 class="video-title">VGM Rescore Demo Reel - Jason Varney</h2>
+                            </div>
+                        </div>
+                        <div class="video-tabs">
 
+                        </div>
+                    </div>
+                </div> -->
+                <div id="scores" class="tab-content">
+                    <div class="score-page" data-page="1">
+                        <div class="score-grid">
+                            <div class="score-container">
+                                <h3>Autumn Breeze</h3>
+                                <img class="score-thumb" src="imgs/scores/AutumnThumb.png"/>
+                                <audio class="score-audio" controls controlsList="nodownload noplaybackrate no" preload="metadata">
+                                    <source src="./audio/Tatsuro Yamashita - Fragile.mp3" type="audio/mpeg">    
+                                </audio>
+                                <div class="score-buttons">
+                                    <a class="preview-button" target="_blank" href="https://drive.google.com/file/d/1pEXwaOFPwlhw17hOOpoa1AwpJDgLk5m8/view?usp=sharing">
+                                        <span>Preview</span>
+                                    </a>
+                                    <a class="download-button" href="https://drive.google.com/uc?export=download&id=1pEXwaOFPwlhw17hOOpoa1AwpJDgLk5m8">
+                                        <img src="./imgs/download-file-icon.png" style="width: 1rem"/>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="score-container">
+                                <h3>Deep Waters</h3>
+                                <img class="score-thumb" src="imgs/scores/DeepWaters.png"/>
+                                <audio class="score-audio" controls controlsList="nodownload noplaybackrate no" preload="metadata">
+                                    <source src="./audio/Tatsuro Yamashita - Fragile.mp3" type="audio/mpeg">    
+                                </audio>
+                                <div class="score-buttons">
+                                    <a class="preview-button" target="_blank" href="https://drive.google.com/file/d/1-etbmtJbJc-hqpVYXKDbsyyg69dXXMMA/view?usp=sharing">
+                                        <span>Preview</span>
+                                    </a>
+                                    <a class="download-button" href="https://drive.google.com/uc?export=download&id=1-etbmtJbJc-hqpVYXKDbsyyg69dXXMMA">
+                                        <img src="./imgs/download-file-icon.png" style="width: 1rem"/>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="score-container">
+                                <h3>Rain Drops</h3>
+                                <img class="score-thumb" src="imgs/scores/RainDrops.png"/>
+                                <audio class="score-audio" controls controlsList="nodownload noplaybackrate no" preload="metadata">
+                                    <source src="./audio/Tatsuro Yamashita - Fragile.mp3" type="audio/mpeg">    
+                                </audio>
+                                <div class="score-buttons">
+                                    <a class="preview-button" target="_blank" href="https://drive.google.com/file/d/1cN4SyFK8BlvtE7eciFkrpWJXdKFSMfcX/view?usp=sharing">
+                                        <span>Preview</span>
+                                    </a>
+                                    <a class="download-button" href="https://drive.google.com/uc?export=download&id=1cN4SyFK8BlvtE7eciFkrpWJXdKFSMfcX">
+                                        <img src="./imgs/download-file-icon.png" style="width: 1rem"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="score-page" data-page="2" hidden>
+                        <div class="score-grid">
+                            <div class="score-container">
+                                <h3>Autumn Breeze 2</h3>
+                                <img class="score-thumb" src="imgs/scores/AutumnThumb.png"/>
+                                <audio class="score-audio" controls controlsList="nodownload noplaybackrate no" preload="metadata">
+                                    <source src="./audio/Tatsuro Yamashita - Fragile.mp3" type="audio/mpeg">    
+                                </audio>
+                                <div class="score-buttons">
+                                    <a class="preview-button" target="_blank" href="https://drive.google.com/file/d/1pEXwaOFPwlhw17hOOpoa1AwpJDgLk5m8/view?usp=sharing">
+                                        <span>Preview</span>
+                                    </a>
+                                    <a class="download-button" href="https://drive.google.com/uc?export=download&id=1pEXwaOFPwlhw17hOOpoa1AwpJDgLk5m8">
+                                        <img src="./imgs/download-file-icon.png" style="width: 1rem"/>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="score-container">
+                                <h3>Deep Waters 2</h3>
+                                <img class="score-thumb" src="imgs/scores/DeepWaters.png"/>
+                                <audio class="score-audio" controls controlsList="nodownload noplaybackrate no" preload="metadata">
+                                    <source src="./audio/Tatsuro Yamashita - Fragile.mp3" type="audio/mpeg">    
+                                </audio>
+                                <div class="score-buttons">
+                                    <a class="preview-button" target="_blank" href="https://drive.google.com/file/d/1-etbmtJbJc-hqpVYXKDbsyyg69dXXMMA/view?usp=sharing">
+                                        <span>Preview</span>
+                                    </a>
+                                    <a class="download-button" href="https://drive.google.com/uc?export=download&id=1-etbmtJbJc-hqpVYXKDbsyyg69dXXMMA">
+                                        <img src="./imgs/download-file-icon.png" style="width: 1rem"/>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="score-container">
+                                <h3>Rain Drops 2</h3>
+                                <img class="score-thumb" src="imgs/scores/RainDrops.png"/>
+                                <audio class="score-audio" controls controlsList="nodownload noplaybackrate no" preload="metadata">
+                                    <source src="./audio/Tatsuro Yamashita - Fragile.mp3" type="audio/mpeg">    
+                                </audio>
+                                <div class="score-buttons">
+                                    <a class="preview-button" target="_blank" href="https://drive.google.com/file/d/1cN4SyFK8BlvtE7eciFkrpWJXdKFSMfcX/view?usp=sharing">
+                                        <span>Preview</span>
+                                    </a>
+                                    <a class="download-button" href="https://drive.google.com/uc?export=download&id=1cN4SyFK8BlvtE7eciFkrpWJXdKFSMfcX">
+                                        <img src="./imgs/download-file-icon.png" style="width: 1rem"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-footer">
+                        <div class="page-selector">
+                            <a class="scroll-button" onclick="scrollScoreLeft();">
+                                <img src="imgs/left-arrow.png" />
+                            </a>
+                            <img data-page="1" class="page-dot current-page" src="imgs/dot.png"/>
+                            <img data-page="2" class="page-dot" src="imgs/dot.png"/>
+                            <!-- <img data-page="3" class="page-dot" src="imgs/dot.png"/>
+                            <img data-page="4" class="page-dot" src="imgs/dot.png"/>
+                            <img data-page="5" class="page-dot" src="imgs/dot.png"/> -->
+                            <a class="scroll-button" onclick="scrollScoreRight();">
+                                <img src="imgs/right-arrow.png" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="about-page" id="about">
             <div class="about-pic-container">
@@ -69,11 +220,34 @@
                 <div class="about-text">
                     <h1 class="about-header">About Me</h1>
                     <p class="about-body">
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+                        Jason is a composer who engulfs himself in video game music 
+                        and concert music composition. He began his passion for music 
+                        in middle school when he first joined chorus; and soon after 
+                        joined the band program playing trumpet. Since then, Jason has 
+                        been extremely interested in traditional scoring and composition; 
+                        later given opportunities to write original music for his high 
+                        school's program. Jason would go on to write a few instrumental 
+                        works inspired by contemporary classical composers such as Morten 
+                        Lauridsen, Eric Whitacre, and Daniel Elder. One of his compositions 
+                        titled "Autumn Breeze" won the grand prize in the annual Florida 
+                        Bandmaster's Association Composition Contest.
+                    </p>
+                    <p class="about-body">
+                        After graduation, Jason proceeded to branch out into digital music 
+                        production. Jason has always loved video games and their accompanying 
+                        soundtracks. With his ever growing composition experience, he has 
+                        taken interest in producing VGM. Jason is a huge fan of game franchises 
+                        such as: Pokemon, The Legend of Zelda, Super Mario, Kirby and Undertale. 
+                        He takes inspiration from game composers like Jun Ishikawa, Yoko Shimomura, 
+                        Junichi Masuda, Nobuo Uematsu and Toby Fox. Due to his broad influences, 
+                        Jason is able to express a wide range of moods and styles and enjoys 
+                        "painting the picture" with his music; as well as lending his creativity 
+                        to other talented people.
                     </p>
                 </div>
             </div>
         </div>
     </div>
+    <script src="./js/index.js"></script>
 </body>
 </html>
